@@ -3,7 +3,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C1_GetRequestResponseBodyYazdirma {
+public class C01_GetRequest_GetRequestResponseBodyYazdirma {
 
     @Test
     public void get01() {
@@ -20,7 +20,7 @@ public class C1_GetRequestResponseBodyYazdirma {
 
         // 3- Request gonderip, donen response'i kaydetme
         Response response = given().when().get(url);
-        response.prettyPrint(); // response'yi yazdirir
+        response.prettyPrint(); // response'in body'sini yazdirir
 
         // 4- Assertion
         // assertion istenmedigi icin pass gecildi
