@@ -23,7 +23,7 @@ public class C1_GetRequestResponseBodyYazdirma {
         response.prettyPrint(); // response'yi yazdirir
 
         // 4- Assertion
-
+        // assertion istenmedigi icin pass gecildi
 
     }
 }
@@ -32,7 +32,7 @@ public class C1_GetRequestResponseBodyYazdirma {
 
 /*
 
-Donen resonse :
+Donen response :
 
 {
     "firstname": "Mark",
