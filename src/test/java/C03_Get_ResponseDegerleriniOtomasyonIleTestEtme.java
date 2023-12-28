@@ -27,7 +27,9 @@ public class C03_Get_ResponseDegerleriniOtomasyonIleTestEtme {
 
 
         // 3- Request gonderip, donen response'i kaydetme
-        Response response= given().when().get(url);
+        Response response= given()
+                            .when()
+                            .get(url);
 
 
         // 4- Assertion
