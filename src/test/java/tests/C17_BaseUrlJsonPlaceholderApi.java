@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import baseUrl.BaseUrlJsonPlaceholder;
 import io.restassured.response.Response;
