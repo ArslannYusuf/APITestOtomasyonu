@@ -29,13 +29,20 @@ public class C10_JsonPathKullanimi {
         telefonBilgileriArr.put(evTelJsonObj);
 
 
-        kisiBilgileriJsonObj.put("firstName","John");
-        kisiBilgileriJsonObj.put("lastName","Doe");
-        kisiBilgileriJsonObj.put("age","50");
-        kisiBilgileriJsonObj.put("adress",adresJsonObj);
-        kisiBilgileriJsonObj.put("phoneNumbers",telefonBilgileriArr);
+        kisiBilgileriJsonObj.put("firstName", "John");
+        kisiBilgileriJsonObj.put("lastName", "Doe");
+        kisiBilgileriJsonObj.put("age", "50");
+        kisiBilgileriJsonObj.put("adress", adresJsonObj);
+        kisiBilgileriJsonObj.put("phoneNumbers", telefonBilgileriArr);
 
+        // JSOnPath kullanmadan bu sekilde yazdim
         System.out.println(kisiBilgileriJsonObj);
+        System.out.println("firstName = " + kisiBilgileriJsonObj.get("firstName"));
+        System.out.println("lastname = " + kisiBilgileriJsonObj.get("lastName"));
+        System.out.println("cadde = " + kisiBilgileriJsonObj.getJSONObject("adress").get("streetAddress"));
+        System.out.println("city = " + kisiBilgileriJsonObj.getJSONObject("adress").get("city"));
+        System.out.println("number = " + kisiBilgileriJsonObj.getJSONArray("phoneNumbers").getJSONObject(0).get("number"));
+
 
 
     }
