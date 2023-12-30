@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import baseUrl.BaseUrlHerokuapp;
 import io.restassured.path.json.JsonPath;
