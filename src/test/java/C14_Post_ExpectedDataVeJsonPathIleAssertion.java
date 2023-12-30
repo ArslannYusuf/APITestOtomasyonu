@@ -63,8 +63,6 @@ public class C14_Post_ExpectedDataVeJsonPathIleAssertion {
 
 
         // 2- Expected data hazirlama
-        // body icerisinde sipesifik bir datayi test ediniz demedigi icin olusturmuyorum
-
         JSONObject expectedData = new JSONObject();
         expectedData.put("bookingid", 24);
         expectedData.put("booking", requestBody);
