@@ -1,3 +1,5 @@
+package test;
+
 import io.restassured.response.Response;
 import org.junit.Test;
 
