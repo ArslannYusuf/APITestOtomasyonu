@@ -5,6 +5,8 @@ import org.json.JSONObject;
 public class TestDataJsonPlaceholder {
 
     public static int basariliStatusKodu = 200;
+    public static String contentType = "application/json; charset=utf-8";
+    public static String connectionHeader = "keep-alive";
 
     public static JSONObject responseBodyOlustur22() {
         JSONObject expectedData = new JSONObject();
@@ -16,7 +18,7 @@ public class TestDataJsonPlaceholder {
         return expectedData;
     }
 
-    public static JSONObject responseJsonBodyOlustur(int userId, int id, String title, String body) {
+    public static JSONObject JsonBodyOlustur(int userId, int id, String title, String body) {
         JSONObject expectedData = new JSONObject();
         expectedData.put("userId", userId);
         expectedData.put("id", id);
