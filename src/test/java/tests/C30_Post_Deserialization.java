@@ -68,6 +68,7 @@ public class C30_Post_Deserialization extends BaseUrlHerokuapp {
 
         // 4- Assertions
         Map<String, Object> responseMap = response.as(HashMap.class);
+
         assertEquals(((Map) expectedData.get("booking")).get("firstname"),
                 ((Map) responseMap.get("booking")).get("firstname"));
 
