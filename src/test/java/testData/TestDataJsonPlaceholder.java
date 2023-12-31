@@ -2,6 +2,9 @@ package testData;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestDataJsonPlaceholder {
 
     public static int basariliStatusKodu = 200;
@@ -29,5 +32,14 @@ public class TestDataJsonPlaceholder {
     }
 
 
+    public static Map<String,Object> bodyOlusturMap(){
+        Map<String,Object> bodyMap = new HashMap<>();
+        bodyMap.put("title", "Yusuf");
+        bodyMap.put("body", "never back down");
+        bodyMap.put("userId", 10.0);
+        bodyMap.put("id", 70.0);
+
+        return bodyMap;
+    }
 
 }
