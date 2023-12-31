@@ -34,7 +34,7 @@ public class C24_Get_TestDataClassKullanimi extends BaseUrlJsonPlaceholder {
 
 
         // 2- Expected data hazirlama
-        JSONObject expectedData = TestDataJsonPlaceholder.responseJsonBodyOlustur(4,40,"enim quo cumque","ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam");
+        JSONObject expectedData = TestDataJsonPlaceholder.JsonBodyOlustur(4,40,"enim quo cumque","ut voluptatum aliquid illo tenetur nemo sequi quo facilis\nipsum rem optio mollitia quas\nvoluptatem eum voluptas qui\nunde omnis voluptatem iure quasi maxime voluptas nam");
 
 
         // 3- Request gonderip, donen response'i kaydetme
